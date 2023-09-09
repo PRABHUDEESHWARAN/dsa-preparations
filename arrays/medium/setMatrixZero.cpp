@@ -35,8 +35,8 @@ for(int i=0;i<r;i++)
         }
     }
 }
-//here we are filling the zeros based on the marking array and we marking everything except the first array and 
-//first column because all other elements are dependent on them.The order in which we will mark the zeros is as
+//here we are filling the zeros based on the marking array and we marking everything except the first row array and 
+//first column array because all other elements are dependent on them.The order in which we will mark the zeros is as
 //follows ->m[1][1] to m[n-1][n-1]->first row from last->first column from bottom.
 
 //m[1][1] to m[n-1][n-1]

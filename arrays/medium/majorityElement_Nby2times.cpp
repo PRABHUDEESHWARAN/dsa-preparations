@@ -6,7 +6,7 @@ majority element appearing more than n/2 times.
 The intuition here is that the majority element that occurs more than n/2 times will
 always be the surivivor among all the other elements.
 -> consider the shooting scneraio, if an element appears it will try to be the majority element by shooting the
-previous majority element, if an element shoots the current majority element and its power becomes zero, then 
+previous majority element, if an element comes in and the current majority element's  power is zero, then 
 the current element will become the majority element.
 ->At the end after the shootings, the majority element will remain as the surivivor.
 */
@@ -31,6 +31,15 @@ int majority(vector<int> v)
             power--;
         }
     }
+    int cnt=0;
+    for(int i=0;i<v.size();i++)
+    {
+        if(v[i]==candidate)
+        {
+            cnt++;
+        }
+    }
+    if(cnt>=(v.size()/2))
     return candidate;
 }
 
