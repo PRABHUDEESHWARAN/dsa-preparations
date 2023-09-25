@@ -47,24 +47,6 @@ void printAns(vector<int> v)
     return;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // func for adding edge.
 void addEdge(vector<int> adj[],int v,int u)
 {
