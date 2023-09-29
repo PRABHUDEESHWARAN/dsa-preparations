@@ -11,9 +11,10 @@ NOTE: we can use any number of moves to move from one land cell to another.
 
 Intuition: This problem is very much similar to the flood fill problem, here 
     -> we can do a bfs or dfs from all the land cells(1's) that are present in the boundary
-    -> doing a bfs from
-
-
+    -> doing a bfs from land cells on the boundary will make sure that all the connected land cells are visited.
+    -> after doing the traversal we can either traverse the grid again and count the number of ones that are not visites
+    or we can use a variable to have a count of total number of ones that are not present in the boundary decrement them
+    during traversal if visited.
 */
 
 
