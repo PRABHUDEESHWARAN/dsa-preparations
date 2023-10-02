@@ -18,11 +18,6 @@ Intuition: This problem is very much similar to the flood fill problem, here
 */
 
 
-
-
-// } Driver Code Ends
-// User function Template for C++
-
 class Solution {
   public:
     int numberOfEnclaves(vector<vector<int>> &grid) {
