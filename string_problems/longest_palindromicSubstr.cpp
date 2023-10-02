@@ -51,7 +51,7 @@ for(int diff=0;diff<n;diff++)
         }
         else if(i==j-1 && s[i]==s[j])
         {
-            dp[i][j]=1;
+            dp[i][j]=2;
         }
         else
         {
