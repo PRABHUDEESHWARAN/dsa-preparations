@@ -30,7 +30,7 @@ for(int i=0;i<r;i++)
 
 int main()
 {
-    vector<vector<int>> matrix = {{0,1,2,0}, {3,4,5,2}, {1,3,1,5}};
+    vector<vector<int>> matrix = {{1,2,3}, {4,5,6}, {7,8,9}};
     int n = matrix.size();
     int m = matrix[0].size();
     rotate(matrix, n, m);
