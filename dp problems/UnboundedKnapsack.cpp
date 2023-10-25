@@ -1,6 +1,24 @@
 //{ Driver Code Starts
 // Initial Template for C++
+/*
+Unbounded Knapsack problem: here we are given an set of values and their weight and also the weight of the bag, we need to return the
+maximum sum that can be formed by filling the bag with values.
+NOTE: taking the same value again is allowed as the problem states its unbounded we have infinite supply.
 
+solution:
+    -> Here we can either pick the current value or not pick the current value
+    -> if we dont pick we go to the next index without adding value (0+ next_recur_call)
+    -> If we pick it then we can take it until the bag holds again and again there for we will call the recursion for the same index
+    again and again till the bag fits. (val[i]+next_rec_call_for_same_index).
+    -> we go from n-1 index to 0 index and at zero index we have base case.
+    -> if we are at the last index that is 0 index, we will definitely take as much as possible therefore
+    we put a separate condition by diving the value of 0 index with the remaining capacity.
+
+    -> at last we can improve the time complexity by doing memoization and tabulation.
+
+
+
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
